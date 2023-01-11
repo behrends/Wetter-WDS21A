@@ -13,6 +13,10 @@
 
     <h1>Wetter-App</h1>
 
+    <div id="id123">
+      <p class="egal">Dies soll magenta sein.</p>
+    </div>
+
     Beispiel-Orte:
     <select>
       <option value="Berlin">Berlin</option>
@@ -28,12 +32,39 @@
     <input type="text" placeholder="Ort hinzufügen" />
     <button>Suche</button>
 
+    <br />
+    <br />
+
     <!-- p: Textabschnitt (paragraph) -->
     <!-- <p> öffnendes Tag -->
     <!-- </p> schließende Tag -->
-    <p>Basel: 7 Grad</p>
-    <p>Freiburg: 8 Grad</p>
-    <p>Lörrach: 6 Grad</p>
+    <div class="weather_location">
+      <div class="place">Basel</div>
+      <span class="temp">7°</span>
+      <span class="cond">zunehmend bewölkt</span>
+      <img src="./sun-cloudy-line.svg" alt="bewölkt" />
+    </div>
+
+    <br />
+
+    <div class="weather_location">
+      <div class="place">Freiburg</div>
+      <span class="temp">8°</span> <span class="cond">heiter</span>
+      <img src="./sun-cloudy-line.svg" alt="bewölkt" />
+    </div>
+
+    <br />
+
+    <div class="weather_location">
+      <div class="place">Lörrach</div>
+      <span class="temp">6°</span>
+      <span class="cond">heiter</span>
+      <img src="./sun-cloudy-line.svg" alt="bewölkt" />
+    </div>
+
+    <br />
+    <br />
+    <br />
 
     <table>
       <tr>
