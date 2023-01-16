@@ -3,6 +3,10 @@ body {
   font-family: sans-serif;
 }
 
+#location_list {
+  margin-bottom: 15px;
+}
+
 .weather_location {
   /* border-width: 2px;
   border-style: solid;
