@@ -7,6 +7,13 @@ body {
   margin-bottom: 15px;
 }
 
+#weather_tiles {
+  /* Flexbox Layout */
+  display: flex;
+  flex-direction: row; /* Ausrichtung */
+  justify-content: flex-start;
+}
+
 .weather_location {
   /* border-width: 2px;
   border-style: solid;
