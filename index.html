@@ -1,87 +1,99 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Wetter-App</title>
-    <link rel="stylesheet" href="./style.css" type="text/css" />
-  </head>
 
-  <body>
-    <!-- Bild-Element -->
-    <!-- „leeres“ Element img -->
-    <img src="./dhbw.jpeg" alt="Foto des DHBW Lörrach Campus" />
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Wetter-App</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
 
-    <h1>Wetter-App</h1>
+<body>
+  <!-- Bild-Element -->
+  <!-- „leeres“ Element img -->
+  <img src="./dhbw.jpeg" alt="Foto des DHBW Lörrach Campus" />
 
-    <div id="id123">
-      <p class="egal">Dies soll magenta sein.</p>
-    </div>
+  <h1>Wetter-App</h1>
 
-    Beispiel-Orte:
-    <select>
-      <option value="Berlin">Berlin</option>
-      <option value="Hamburg">Hamburg</option>
-      <option value="Paris">Paris</option>
-      <option value="Sydney">Sydney</option>
-      <option value="Tokio">Tokio</option>
-    </select>
-    <button>Hinzufügen</button>
+  <div id="id123">
+    <p class="egal">Dies soll magenta sein.</p>
+  </div>
 
-    <br />
+  Beispiel-Orte:
+  <select>
+    <option value="Berlin">Berlin</option>
+    <option value="Hamburg">Hamburg</option>
+    <option value="Paris">Paris</option>
+    <option value="Sydney">Sydney</option>
+    <option value="Tokio">Tokio</option>
+  </select>
+  <button>Hinzufügen</button>
 
-    <input type="text" placeholder="Ort hinzufügen" />
-    <button>Suche</button>
+  <br />
 
-    <br />
-    <br />
+  <input type="text" placeholder="Ort hinzufügen" />
+  <button>Suche</button>
 
-    <!-- p: Textabschnitt (paragraph) -->
-    <!-- <p> öffnendes Tag -->
-    <!-- </p> schließende Tag -->
-    <div class="weather_location">
-      <div class="place">Basel</div>
-      <span class="temp">7°</span>
-      <span class="cond">zunehmend bewölkt</span>
-      <img src="./sun-cloudy-line.svg" alt="bewölkt" />
-    </div>
+  <br />
+  <br />
 
-    <br />
+  <!-- p: Textabschnitt (paragraph) -->
+  <!-- <p> öffnendes Tag -->
+  <!-- </p> schließende Tag -->
+  <div class="weather_location">
+    <div class="place">Basel</div>
+    <span class="temp">7°</span>
+    <span class="cond">zunehmend bewölkt</span>
+    <img src="./sun-cloudy-line.svg" alt="bewölkt" />
+  </div>
 
-    <div class="weather_location">
-      <div class="place">Freiburg</div>
-      <span class="temp">8°</span> <span class="cond">heiter</span>
-      <img src="./sun-cloudy-line.svg" alt="bewölkt" />
-    </div>
+  <br />
 
-    <br />
+  <div class="weather_location">
+    <div class="place">Freiburg</div>
+    <span class="temp">8°</span> <span class="cond">heiter</span>
+    <img src="./sun-cloudy-line.svg" alt="bewölkt" />
+  </div>
 
-    <div class="weather_location">
-      <div class="place">Lörrach</div>
-      <span class="temp">6°</span>
-      <span class="cond">heiter</span>
-      <img src="./sun-cloudy-line.svg" alt="bewölkt" />
-    </div>
+  <br />
 
-    <br />
-    <br />
-    <br />
+  <div class="weather_location">
+    <div class="place">Lörrach</div>
+    <span class="temp">6°</span>
+    <span class="cond">heiter</span>
+    <img src="./sun-cloudy-line.svg" alt="bewölkt" />
+  </div>
 
-    <table>
-      <tr>
-        <td>Basel</td>
-        <td>7°</td>
-        <td>heiter</td>
-      </tr>
-      <tr>
-        <td>Freiburg</td>
-        <td>7°</td>
-        <td>heiter</td>
-      </tr>
-      <tr>
-        <td>Lörrach</td>
-        <td>7°</td>
-        <td>heiter</td>
-      </tr>
-    </table>
-  </body>
+  <br />
+  <br />
+  <br />
+
+  <table>
+    <tr>
+      <td>Basel</td>
+      <td>7°</td>
+      <td>heiter</td>
+    </tr>
+    <tr>
+      <td>Freiburg</td>
+      <td>7°</td>
+      <td>heiter</td>
+    </tr>
+    <tr>
+      <td>Lörrach</td>
+      <td>7°</td>
+      <td>heiter</td>
+    </tr>
+  </table>
+
+  <script src="script.js"></script>
+
+  <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script>
+</body>
+
 </html>
