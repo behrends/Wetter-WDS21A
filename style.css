@@ -1,0 +1,25 @@
+/* KOMMENTAR ! */
+body {
+  font-family: sans-serif;
+}
+
+.weather_location {
+  /* border-width: 2px;
+  border-style: solid;
+  border-color: silver; */
+  border: 2px solid silver;
+  border-radius: 4px;
+}
+
+.place {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.temp {
+  font-weight: 300;
+}
+
+.cond {
+  font-style: italic;
+}
