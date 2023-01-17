@@ -7,12 +7,17 @@ body {
   margin-bottom: 15px;
 }
 
+#location_search {
+  margin-bottom: 15px;
+}
+
 #weather_tiles {
   /* Flexbox Layout */
   display: flex;
   flex-direction: row; /* Ausrichtung */
   justify-content: flex-start;
   flex-wrap: wrap;
+  row-gap: 15px; /* Zeilenabstand zw. Items */
 }
 
 .weather_location {
