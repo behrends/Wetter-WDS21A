@@ -14,21 +14,29 @@ body {
 #weather_tiles {
   /* Flexbox Layout */
   display: flex;
-  flex-direction: row; /* Ausrichtung */
+  flex-direction: row; /* Ausrichtung Hauptachse*/
+  /* justify-content: Anordnung der Items 
+  auf der Hauptachse (hier horizontal) */
   justify-content: flex-start;
+  /* align-items: Anordnung der Items 
+  entlang der Querachse (hier vertikal) */
+  align-items: flex-start;
+  /* flex-wrap: Zeilenumbrüche */
   flex-wrap: wrap;
   row-gap: 15px; /* Zeilenabstand zw. Items */
 }
 
 .weather_location {
-  /* border-width: 2px;
-  border-style: solid;
-  border-color: silver; */
   border: 2px solid silver;
   border-radius: 4px;
   padding: 5px;
   width: 200px;
   margin-right: 10px;
+}
+
+.weather_info {
+  display: flex;
+  justify-content: space-between;
 }
 
 .place {
