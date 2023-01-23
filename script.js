@@ -1,6 +1,7 @@
 // 1. Schritt: Button "TEST" referenzieren
-const btn = document.getElementById('test');
 const weatherTiles = document.getElementById('weather_tiles');
+const searchInput = document.getElementById('search_input');
+const searchButton = document.getElementById('search_button');
 
 // HTML der Wetterorte:
 function getWeatherLocationHTML(location) {
@@ -21,8 +22,8 @@ function getWeatherLocationHTML(location) {
 function createNewLocation() {
   // Neues Element erstellen (<div></div>)
   const newElement = document.createElement('div');
-  // Inhalt des neuen Elementes setzen <div>Hamburg</div>
-  const location = 'Berlin';
+  // Inhalt des neuen Elementes setzen <div>ORT</div>
+  const location = searchInput.value;
   newElement.innerHTML = getWeatherLocationHTML(location);
   // Neues Element als Kind an weatherTiles einfügen
   weatherTiles.appendChild(newElement);
@@ -31,4 +32,4 @@ function createNewLocation() {
 // 3. Schritt: Event-Handler (click) anbinden
 // "Funktion an den Button namens Test hängen"
 // () => alert('OK') --> function() {alert('ok')}
-btn.addEventListener('click', createNewLocation);
+searchButton.addEventListener('click', createNewLocation);
