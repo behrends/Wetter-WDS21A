@@ -1,7 +1,3 @@
-function firstFunction() {
-  alert('TODO: Suche ausführen');
-}
-
 function createNewLocation() {
   // 3. Schritt: Neues Element erstellen (<div></div>)
   const newElement = document.createElement('div');
@@ -15,13 +11,6 @@ function createNewLocation() {
   // b) Neues Element als Kind an weatherTiles einfügen
   weatherTiles.appendChild(newElement);
 }
-
-// Referenz auf den Button mit der id
-// "search_button" herstellen
-const searchButton = document.getElementById('search_button');
-// Binde Funktion firstFunction an den
-// Button mit der id "search_button"
-searchButton.addEventListener('click', firstFunction);
 
 // TODO: Klick auf Button "TEST" erzeugt Element
 // 1. Schritt: Button "TEST" referenzieren
