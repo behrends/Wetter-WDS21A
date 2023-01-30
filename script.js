@@ -1,14 +1,11 @@
-// Datenquelle: lokales Array
-const data = [
-  { name: 'Basel', temp: 7 },
-  { name: 'Barcelona', temp: 17 },
-  { name: 'Freiburg', temp: 4 },
-  { name: 'Lörrach', temp: 6 },
-  { name: 'Sydney', temp: 21 },
-];
-
-function loadData() {
-  data.forEach((elem) => createNewLocation(elem.name));
+async function loadData() {
+  // fetch data from my-json-server
+  const response = await fetch(
+    'https://my-json-server.typicode.com/behrends/Wetter-WDS21A/data'
+  );
+  const jsonData = await response.json();
+  console.log(jsonData);
+  jsonData.forEach((elem) => createNewLocation(elem.name));
 }
 
 // Referenzen auf HTML-Elemente
