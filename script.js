@@ -1,3 +1,16 @@
+// Datenquelle: lokales Array
+const data = [
+  { name: 'Basel', temp: 7 },
+  { name: 'Barcelona', temp: 17 },
+  { name: 'Freiburg', temp: 4 },
+  { name: 'Lörrach', temp: 6 },
+  { name: 'Sydney', temp: 21 },
+];
+
+function loadData() {
+  data.forEach((elem) => createNewLocation(elem.name));
+}
+
 // Referenzen auf HTML-Elemente
 const weatherTiles = document.getElementById('weather_tiles');
 const searchInput = document.getElementById('search_input');
@@ -36,3 +49,5 @@ searchButton.addEventListener('click', () =>
 locationButton.addEventListener('click', () =>
   createNewLocation(locationSelect.value)
 );
+
+loadData();
