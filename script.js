@@ -4,7 +4,6 @@ async function loadData() {
     'https://my-json-server.typicode.com/behrends/Wetter-WDS21A/data'
   );
   const jsonData = await response.json();
-  console.log(jsonData);
   jsonData.forEach((elem) => createNewLocation(elem.name));
 }
 
