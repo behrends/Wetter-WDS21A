@@ -4,7 +4,7 @@
     { "name": "Barcelona", "temp": 17 },
     { "name": "Freiburg", "temp": 4 },
     { "name": "Lörrach", "temp": 6 },
-    { "name": "Sydney", "temp": 21 }
+    { "name": "Sydney", "temp": 21 },
     { "name": "Tokio", "temp": 1 }
   ]
 }
