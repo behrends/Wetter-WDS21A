@@ -1,10 +1,13 @@
+let locations = [];
+
 async function loadData() {
-  // fetch data from my-json-server
-  const response = await fetch(
-    'https://my-json-server.typicode.com/behrends/Wetter-WDS21A/data'
-  );
-  const jsonData = await response.json();
-  jsonData.forEach((elem) => createNewLocation(elem.name));
+  // Lade Daten aus localStorage
+  const locationsJSON = localStorage.getItem('LOCATIONS');
+  if (locationsJSON !== null) {
+    locations = JSON.parse(locationsJSON);
+  }
+  // Orte dem HTML hinzufügen
+  locations.forEach((location) => addLocationToTiles(location.name));
 }
 
 // Referenzen auf HTML-Elemente
@@ -29,13 +32,23 @@ function getWeatherLocationHTML(location) {
 }
 
 // Funktionen für Verhalten
-function createNewLocation(location) {
+function addLocationToTiles(location) {
   // Neues Element erstellen (<div></div>)
   const newElement = document.createElement('div');
   // Inhalt des neuen Elementes setzen <div>location</div>
   newElement.innerHTML = getWeatherLocationHTML(location);
   // Neues Element als Kind an weatherTiles einfügen
   weatherTiles.appendChild(newElement);
+}
+
+function createNewLocation(location) {
+  // Ort im HTML als Kachel einfügen
+  addLocationToTiles(location);
+
+  // neuen Ort in localStorage speichern
+  locations.push({ name: location });
+  const locationsJSON = JSON.stringify(locations);
+  localStorage.setItem('LOCATIONS', locationsJSON);
 }
 
 // Event-Handler (z.B. click) an HTML-Elemente binden
